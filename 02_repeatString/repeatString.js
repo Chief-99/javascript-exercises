@@ -4,7 +4,11 @@ const repeatString = function(string, num) {
     result += string;
   }
 
-  return result;
+  if (num < 0) {
+    return 'ERROR';
+  } else {
+    return result;
+  }
 };
 
 console.log(repeatString('hey', 0));
