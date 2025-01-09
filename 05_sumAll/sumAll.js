@@ -1,17 +1,21 @@
 const sumAll = function(initVal, finalVal) {
   let sum = 0;
 
-  if (finalVal > initVal) {
-    for (let i = initVal; i <= finalVal; i++) {
-      sum += i;
-    }
+  if (initVal < 0 || finalVal < 0) {
+    return 'ERROR';
   } else {
-    for (let i = finalVal; i <= initVal; i++) {
-      sum += i;
+    if (finalVal > initVal) {
+      for (let i = initVal; i <= finalVal; i++) {
+        sum += i;
+      }
+    } else {
+      for (let i = finalVal; i <= initVal; i++) {
+        sum += i;
+      }
     }
+  
+    return sum;
   }
-
-  return sum;
 };
 
 // Do not edit below this line
