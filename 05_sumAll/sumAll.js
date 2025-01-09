@@ -5,7 +5,7 @@ const sumAll = function(initVal, finalVal) {
     sum += i;
   }
 
-  
+  return sum;
 };
 
 // Do not edit below this line
