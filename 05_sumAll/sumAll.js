@@ -1,5 +1,11 @@
 const sumAll = function(initVal, finalVal) {
   let sum = 0;
+
+  for (let i = initVal; i <= finalVal; i++) {
+    sum += i;
+  }
+
+  
 };
 
 // Do not edit below this line
