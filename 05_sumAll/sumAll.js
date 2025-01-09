@@ -1,7 +1,7 @@
 const sumAll = function(initVal, finalVal) {
   let sum = 0;
 
-  if (initVal < 0 || finalVal < 0) {
+  if (initVal < 0 || finalVal < 0 || !Number.isInteger(initVal) || !Number.isInteger(finalVal)) {
     return 'ERROR';
   } else {
     if (finalVal > initVal) {
