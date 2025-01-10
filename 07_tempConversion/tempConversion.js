@@ -1,6 +1,6 @@
 const convertToCelsius = function(degreeValue) {
   let celcius = (degreeValue - 32) * 5/9;
-  return celcius.toFixed(1);
+  return Number(celcius.toFixed(1));
 };
 
 const convertToFahrenheit = function(degreeValue) {
