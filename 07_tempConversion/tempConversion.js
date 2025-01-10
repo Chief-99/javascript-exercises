@@ -4,7 +4,8 @@ const convertToCelsius = function(degreeValue) {
 };
 
 const convertToFahrenheit = function(degreeValue) {
-   
+   let farenheit = degreeValue * 9/5 + 32;
+   return Number(farenheit.toFixed(1));
 };
 
 // Do not edit below this line
